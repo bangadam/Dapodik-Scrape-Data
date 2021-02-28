@@ -102,8 +102,8 @@ class DapodikSpider(scrapy.Spider):
 
         # SARANA PRASARANA SEKOLAH
         schoolLuasTanah = tableThree.xpath('.//tr[1]/td[4]/text()').get().replace("\u00a0m", ' m2')
-        schoolAksesInternet = tableThree.xpath('.//tr[2]/td[4]/text()').get()
-        schoolSumberListrik = tableThree.xpath('.//tr[4]/td[4]/text()').get()
+        schoolAksesInternet = tableThree.xpath('.//tr[3]/td[4]/text()').get()
+        schoolSumberListrik = tableThree.xpath('.//tr[5]/td[4]/text()').get()
 
         
         yield {
